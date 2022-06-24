@@ -1,16 +1,14 @@
-﻿using Microsoft.AspNetCore.Identity;
-
-namespace ecommerce.src.Models
+﻿namespace ecommerce.src.Models
 {
-    public class User : IdentityUser
+    public class VehiclePortalUser
     {
-        public User()
+        public VehiclePortalUser()
         {
             this.OwnedCars = new List<BuyCar>();
             this.CarsUnderRent = new List<RentCar>();
         }
 
-        public string Username { get; set; }
+        public string VehiclePortalUsername { get; set; }
 
         public string Name { get; set; }
 

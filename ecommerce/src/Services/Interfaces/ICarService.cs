@@ -1,4 +1,6 @@
-﻿using ecommerce.src.Models.Enums;
+﻿using ecommerce.src.Models;
+using ecommerce.src.Models.Enums;
+using ecommerce.src.ServiceModels;
 
 namespace ecommerce.src.Services.Interfaces
 {
@@ -23,6 +25,6 @@ namespace ecommerce.src.Services.Interfaces
 
         Task<bool> Rent(RentCar rentCar, string username);
 
-        Task<CompareCarsServiceModel> CompareCars(int firstCarId, int secondCarId);
+        Task<CompareCarServiceModel> CompareCars(int firstCarId, int secondCarId);
     }
 }

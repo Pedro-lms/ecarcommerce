@@ -9,16 +9,19 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Include="src\Common\VehiclePortal.Common.csproj" />
+    <Compile Include="src\Data\VehiclePortal.Data.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="AutoMapper" Version="11.0.1" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="6.0.6" />
     <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.15.1" />
   </ItemGroup>
 
   <ItemGroup>
     <None Include="src\Models\Models.csproj" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="src\Services\Implementations\" />
+    <None Include="src\Services\VehiclePortal.Services.csproj" />
   </ItemGroup>
 
 </Project>

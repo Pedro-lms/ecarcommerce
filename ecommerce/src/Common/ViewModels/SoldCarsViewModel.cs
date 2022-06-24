@@ -1,12 +1,12 @@
-﻿namespace ecommerce.src.Models
-{
-    public class BuyCar
-    {
-        public int BuyCarId { get; set; }
+﻿using ecommerce.src.Models;
 
+namespace ecommerce.src.Common.ViewModels
+{
+    public class SoldCarsViewModel
+    {
         public string UserId { get; set; }
 
-        public VehiclePortalUser User { get; set; }
+        public string User { get; set; }
 
         public int CarId { get; set; }
 
